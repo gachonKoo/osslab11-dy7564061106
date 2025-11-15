@@ -1,10 +1,8 @@
-from geo.utils import add, sub, mul, div
+from geo.utils import distance, circle_area
 
 def main():
-    print(add(2, 3))
-    print(sub(5, 2))
-    print(mul(2, 4))
-    print(div(10, 2))
+    print(distance((0, 0), (3, 4)))
+    print(circle_area(10))
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

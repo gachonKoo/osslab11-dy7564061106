@@ -1,10 +1,9 @@
-def add(a, b): return a + b
+import math
 
-def sub(a, b): return a - b
+def distance(p1, p2):
+    x1, y1 = p1
+    x2, y2 = p2
+    return math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
 
-def mul(a, b): return a * b
-
-def div(a, b):
-    if b == 0:
-        return None
-    return a / b
+def circle_area(r):
+    return math.pi * (r ** 2)
